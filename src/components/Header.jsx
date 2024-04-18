@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, NavbarBrand,Container } from 'reactstrap'
-import  NucampLogo  from '../app/assets/img/logo.png'
+import { Navbar, NavbarBrand,Container } from 'reactstrap';
+import  NucampLogo  from '../app/assets/img/logo.png';
 
 
 const Header = () => {
@@ -9,10 +9,11 @@ const Header = () => {
             <Container>
                 <NavbarBrand href='/'>
                     <img src={NucampLogo} alt='nucamp logo' />
+                NuCamp
                 </NavbarBrand>
             </Container>
         </Navbar>
     )
 }
 
-export default Header
+export default Header;
