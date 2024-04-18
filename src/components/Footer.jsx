@@ -8,7 +8,11 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>this will be site navigation!</h5>
+                        <h5>Links</h5> 
+                        <a href='/'>Home</a> <br/>
+                        <a href='/'>Directory</a> <br/>
+                        <a href='/AboutPage'>About</a> <br/>
+                        <a href='/'>Contact</a>
                     </Col>
                     <Col xs='6' sm='3' className='text-center'
                     >

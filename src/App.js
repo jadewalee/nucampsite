@@ -1,17 +1,37 @@
 import React from 'react';
-import './App.css';
-import { CAMPSITES } from './app/shared/CAMPSITES';
+import './styles/App.css'
+import AboutPage from './app/pages/AboutPage';
 import Header from './components/Header';
-import CampsiteList from './features/campsites/CampsiteList';
 import Footer from './components/Footer';
+
+
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import HomePage from './app/pages/HomePage';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <CampsiteList />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route
+          path='/HomePage'
+          element={<HomePage />}>
+          </Route>
+          <Route
+            path="/AboutPage"
+            element={<AboutPage />}
+          ></Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
