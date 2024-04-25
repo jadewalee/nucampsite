@@ -17,16 +17,28 @@ const Header = () => {
 
                         <div className='container-head-icons'>
                             <div>
-                                <FaHome /> Home
+                                <a href='/HomePage'>
+                                    <FaHome /> Home
+                                </a>
+
                             </div>
                             <div>
-                                <FaListUl /> Directory
+                                <a href='/Directory'>
+                                    <FaListUl /> Directory
+                                </a>
+
                             </div>
                             <div>
-                                <FaInfo /> About
+                                <a href='/AboutPage'>
+                                    <FaInfo /> About
+                                </a>
+
                             </div>
                             <div>
-                                <FaAddressCard /> Contact
+                                <a href='/'>
+                                    <FaAddressCard /> Contact
+                                </a>
+
                             </div>
                         </div>
                     </div>

@@ -3,9 +3,6 @@ import './styles/App.css'
 import AboutPage from './app/pages/AboutPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
-
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,6 +10,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import HomePage from './app/pages/HomePage';
+import Directory from './app/pages/Directory';
 
 
 function App() {
@@ -28,6 +26,10 @@ function App() {
           <Route
             path="/AboutPage"
             element={<AboutPage />}
+          ></Route>
+          <Route
+            path="/Directory"
+            element={<Directory />}
           ></Route>
         </Routes>
         <Footer />
