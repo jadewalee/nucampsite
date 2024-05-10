@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/App.css'
-import AboutPage from './app/pages/AboutPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import {
@@ -11,6 +10,8 @@ import {
 } from "react-router-dom";
 import HomePage from './app/pages/HomePage';
 import Directory from './app/pages/Directory';
+import AboutPage from './app/pages/AboutPage';
+import ContactPage from './app/pages/ContactPage';
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
           <Route
             path="/Directory"
             element={<Directory />}
+          ></Route>
+           <Route
+            path="/ContactPage"
+            element={<ContactPage />}
           ></Route>
         </Routes>
         <Footer />

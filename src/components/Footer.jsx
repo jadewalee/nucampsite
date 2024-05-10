@@ -9,10 +9,10 @@ const Footer = () => {
                 <Row>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5>Links</h5> 
-                        <a href='/'>Home</a> <br/>
+                        <a href='/HomePage'>Home</a> <br/>
                         <a href='/Directory'>Directory</a> <br/>
                         <a href='/AboutPage'>About</a> <br/>
-                        <a href='/'>Contact</a>
+                        <a href='/ContactPage'>Contact</a>
                     </Col>
                     <Col xs='6' sm='3' className='text-center'
                     >

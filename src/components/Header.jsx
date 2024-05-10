@@ -35,7 +35,7 @@ const Header = () => {
 
                             </div>
                             <div>
-                                <a href='/'>
+                                <a href='/ContactPage'>
                                     <FaAddressCard /> Contact
                                 </a>
 
