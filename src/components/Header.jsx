@@ -3,11 +3,12 @@ import '../styles/App.css';
 import { Navbar, NavbarBrand, Container } from 'reactstrap';
 import NucampLogo from '../app/assets/img/logo.png';
 import { FaHome, FaInfo, FaListUl, FaAddressCard } from "react-icons/fa";
-
+import UserLoginForm from '../features/user/userLoginForm';
 
 const Header = () => {
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
+            <UserLoginForm />
             <Container>
                 <NavbarBrand href='/HomePage'>
                     <div className='navbar-content'>
