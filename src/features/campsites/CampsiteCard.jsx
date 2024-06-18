@@ -1,15 +1,19 @@
 import React from 'react'
 import {Card,CardImg,CardImgOverlay,CardTitle} from 'reactstrap'
+import { Link } from 'react-router-dom';
 
+const CampsiteCard = ({ campsite }) =>{
 
-const CampsiteCard = (props) =>{
+  const { id,image, name} = campsite;
   return (
+    <Link to= {`${id}`}>
     <Card>
-        <CardImg width='100%' src={props.campsite.image} alt={props.campsite.name} />
+        <CardImg width='100%' src={image} alt={name} />
         <CardImgOverlay>
-            <CardTitle>{props.campsite.name}</CardTitle>
+            <CardTitle>{name}</CardTitle>
         </CardImgOverlay>
     </Card>
+    </Link>
   )
 }
 
